@@ -1,0 +1,36 @@
+html {
+    display: block;
+    font-family: fantasy;
+    background-color: rgb(187, 187, 187);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#potion-description {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 10rem;
+}
+#btn {
+}
