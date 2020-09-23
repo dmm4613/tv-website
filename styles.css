@@ -1,7 +1,7 @@
 html {
     display: block;
-    font-family: fantasy;
-    background-color: rgb(187, 187, 187);
+    font-family: 'MedievalSharp', cursive;
+    background-color: rgb(211, 209, 209);
 }
 
 .container {
@@ -15,6 +15,11 @@ html {
 
 .title {
     font-size: 3rem;
+    text-align: center;
+    color: black;
+    -webkit-text-fill-color: rgb(135, 104, 245);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .info {
@@ -29,8 +34,24 @@ html {
     font-size: 1.5rem;
 }
 
-img {
-    max-width: 10rem;
+.kobold {
+    width: 20rem;
+}
+
+.potion {
+    width: 6rem;
 }
 #btn {
+    display: flex;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn:focus {
+    outline: none;
+    box-shadow: none;
 }
