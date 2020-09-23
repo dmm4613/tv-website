@@ -8,9 +8,12 @@ function getRandomInt(max) {
 }
 
 function generatePotion() {
+    let adjective = potionAdjective[getRandomInt(potionAdjective.length)]
+    let firstNoun = potionFirstNoun[getRandomInt(potionFirstNoun.length)]
+    let secondNoun = potionSecondNoun[getRandomInt(potionSecondNoun.length)]
+    document.getElementById('naklak').classList.remove('silent');
     document.getElementById('potion-description').innerHTML =
-        `Potion of 
-    ${potionAdjective[getRandomInt(potionAdjective.length)]}
-    ${potionFirstNoun[getRandomInt(potionFirstNoun.length)]}
-    ${potionSecondNoun[getRandomInt(potionSecondNoun.length)]}`
+        `Potion of ${adjective} ${firstNoun} ${secondNoun}`;
+    document.getElementById('naklak').innerText = `Oooh. ${secondNoun} from ${firstNoun}. 'S good. You like. Make real strong.`;
+    document.getElementById('title').classList.add('title-change');
 }
