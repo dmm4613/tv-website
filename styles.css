@@ -45,8 +45,9 @@ html {
     text-align: center;
     padding: 20px;
     position: relative;
+    margin-top: -2rem;
     left: 110px;
-    top: 30px;
+    top: 50px;
 }
 .speech-bubble .arrow {
     border-style: solid;
